@@ -15,7 +15,6 @@ RUN curl --silent http://cdn.sencha.com/cmd/7.2.0.84/no-jre/SenchaCmd-7.2.0.84-l
 	unlink /tmp/sencha.zip  && \
 	chmod o+x /tmp/SenchaCmd-7.2.0.84-linux-amd64.sh && \
 	/tmp/SenchaCmd-7.2.0.84-linux-amd64.sh -q -dir /opt/Sencha/Cmd/7.2.0.84 && \
-	unlink /tmp/SenchaCmd-7.2.0.84-linux-amd64.sh && \
-    mkdir -p ~/.ssh && eval $(ssh-agent -s) && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config
-	
+	unlink /tmp/SenchaCmd-7.2.0.84-linux-amd64.sh && 
+    
 WORKDIR /app
