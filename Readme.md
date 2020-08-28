@@ -1,0 +1,1 @@
+# Docker image with sencha-cmd installed to use in gitlab ci/cd pipeline
